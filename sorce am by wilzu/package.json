@@ -1,0 +1,19 @@
+{
+  "name": "alight-motion-tools",
+  "version": "1.0.0",
+  "description": "Tools untuk verifikasi akun Alight Motion via API kyuu2nd",
+  "main": "am-tools.js",
+  "bin": {
+    "am-tools": ".kontol.js"
+  },
+  "scripts": {
+    "start": "node kontol.js",
+    "ip": "node -e \"require('axios').get('https://api.ipify.org?format=json').then(r=>console.log('IP Publik:',r.data.ip)).catch(e=>console.log('Gagal cek IP'))\""
+  },
+  "keywords": ["alight-motion", "verification", "termux"],
+  "author": "User Termux",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0"
+  }
+}
